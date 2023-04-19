@@ -374,191 +374,19 @@ Problem mit splash an Bild Mitte */
 
             /*---------------- HOVER ----------------*/
 
-/* PROBLEM - BILD HOVER  */
+
 
 .arrow{
     max-width: 1.33vw;
 }
 
-
 .gallery{
     position: relative;   
-
-
-
 }
-
 
 .klein{
     width: 22.91vw;
     height: 31.25vw;
-
-
-
-}
-
-.groß{
-    width: 34.37vw;
-    height: 46.87vw;
-
-}
-
-
-.gallery > img{
-    display:block;
-    width: 34.37vw;
-    height: 46.87vw;
-
-    display:block;
-    width: 34.37vw;
-    height: 46.87vw;
-
-    display:block;
-    width: 22.91vw;
-    height: 31.25vw;
-
-    display:block;
-    width: 22.91vw;
-    height: 31.25vw;
-
-    width: 34.37vw;
-    height: 46.87vw;
-
-    position: relative;
-    overflow: hidden;
-
-
-    object-fit: cover;
-    cursor: pointer;
-    display:block;
-
-    position: relative;
-    overflow: hidden;
-    width: 22.91vw;
-    height: 31.25vw;
-
-
-    object-fit: cover;
-    cursor: pointer;
-    display:block;
-
-}
-
-.groß > img{
-
-}
-
-.klein > img{
-     max-width: 100%;
-    animation: jump 3s infinite alternate;
-}
-
-/*aufgeräumt*/
-
-
-
-.gallery1:hover .picture-hover-text1{
-    display: block;
-}
-
-
-.picture-hover-text1{
-    display:none;
-    width: 34.37vw;
-    height: 46.87vw;
-    position: absolute;
-    top: 0;
-    flex-direction: column;
-    justify-content:left;
-    align-items: flex-start;
-    overflow: hidden;
-    transition: 0.7s ease;
-}
-/**/
-
-
-.gallery4:hover .picture-hover-text4{
-    display: block;
-}
-
-.picture-hover-text4{
-    display:none;
-    width: 34.37vw;
-    height: 46.87vw;
-    position: absolute;
-    top: 0;
-    flex-direction: column;
-    justify-content:left;
-    align-items: flex-start;
-    overflow: hidden;
-    transition: 0.7s ease;
-}
-
-/**/
-
-
-.gallery2:hover .picture-hover-text{
-    display: block;
-}
-
-.picture-hover-text{
-    display:none;
-    width: 22.91vw;
-    height: 31.25vw;
-    position: absolute;
-    top: 0;
-    flex-direction: column;
-    justify-content:left;
-    align-items: flex-start;
-    overflow: hidden;
-    transition: 0.7s ease;
-}
-
-/**/
-
-
-.gallery3:hover .picture-hover-text3{
-    display: block;
-}
-
-.picture-hover-text3{
-    display:none;
-    width: 22.91vw;
-    height: 31.25vw;
-    position: absolute;
-    top: 0;
-    flex-direction: column;
-    justify-content:left;
-    align-items: flex-start;
-    overflow: hidden;
-    transition: 0.7s ease;
-}
-
-            /*---------------- HOVER ----------------*/
-
-
-.groß > img{
-    position: relative;
-    overflow: hidden;
-    width: 34.37vw;
-    height: 46.87vw;
-
-    object-fit: cover;
-    cursor: pointer;
-    display:block;
-}
-
-.klein > img{
-    position: relative;
-    overflow: hidden;
-    width: 22.91vw;
-    height: 31.25vw;
-
-    max-width: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    display:block;
-
     animation: jump 3s infinite alternate;
 }
 
@@ -568,9 +396,83 @@ Problem mit splash an Bild Mitte */
 }
 
 
+
 .gallery-oben{
+    margin-top: 7rem;
+    margin-bottom: 12rem;
+    max-width:100vw;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.groß{
+    width: 34.37vw;
+    height: 46.87vw;
+}
+.gallery > img{
+    display:block;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    cursor: pointer;
+}
+.groß > img{
+    width: 34.37vw;
+    height: 46.87vw;
+}
+.klein > img{
+    width: 22.91vw;
+    height: 31.25vw;
+    max-width: 100%;
+}
+.gallery:hover .picture-hover-text{
+    display: block;
+}
+.picture-hover-text{
+    visibility: hidden;
+    opacity: 0;
+    width: 34.37vw;
+    height: 46.87vw;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    justify-content:left;
+    align-items: flex-start;
+    overflow: hidden;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    transition: 0.7s ease;
+    transform:translateY(-10px);
+}
+.gallery:hover .picture-hover-text{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+.groß .picture-hover-text{
+    width: 34.37vw;
+    height: 46.87vw;
+}
+.klein .picture-hover-text{
+    width: 22.91vw;
+    height: 31.25vw;
+}
 
 
+
+
+
+
+            /*---------------- HOVER ----------------*/
+
+
+
+
+}
+
+
+.gallery-oben{
     margin-top: 7rem;
     margin-bottom: 12rem;
     max-width:100vw;
@@ -581,7 +483,6 @@ Problem mit splash an Bild Mitte */
 
 
 .gallery-unten{
-
     margin-bottom: 10rem;
     max-width:100vw;
 
@@ -608,7 +509,64 @@ Problem mit splash an Bild Mitte */
 }
 
 
+
+
+
+
+
 /* ----------------- picture-switch-page ---------------------*/
+
+.wrapper-switch{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-switch-page div:hover h2{
+    color: var(--hover-text);
+}
+
+
+.picture-switch-page div:hover img{
+    display: block;
+}
+
+.picture-switch-page img{
+  position: absolute;
+  display: none;
+}
+
+
+/*  ! -----!!!!!!  ! -MEDIA QUERIES NO PIXEL !!!!!!! ----*/
+
+
+.picture-switch-page div img:nth-of-type(1){
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 275px;
+}
+
+.picture-switch-page div img:nth-of-type(2){
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 195px;
+}
+
+
+
+
+.picture-switch-page div{
+    display: flex;
+}
+
+
+
+
 
 .picture-switch-page{
     min-height: 100vh;
@@ -636,63 +594,7 @@ Problem mit splash an Bild Mitte */
     color: var(--hover-text);
 }
 
-.picture-switch-page img {
-    display: inline-block;
-    max-width: 100%;
-}
 
-
-.left-picture-switch {
-    position: absolute;
-    left: 0%;
-    /*top: 0%;
-    right: 0%;
-    bottom: 0%;*/
-    opacity: 1;
-    transition: all .4s ease-in;
-}
-.left-picture-switch img {
-    width: 17.18vw;
-    height: 23.59vw;
-    margin-bottom: 2.18vw;
-    position: relativ;
-}
-.right-picture-switch {
-    position: absolute;
-    right: 0%;
-    /*left: 0%;
-    top: 0%;
-    bottom: 0%;*/
-    overflow: hidden;
-    opacity: 1;
-    transition: all .4s ease-in;
-}
-.right-picture-switch img{
-    width: 11.45vw;
-    height: 14.84vw;
-    position: relativ;
-}
-
-
-.costume:hover .left-picture-switch img:nth-of-type(1), 
-.right-picture-switch img:nth-of-type(1){
-    display:block;
-}
-
-.acting:hover .left-picture-switch img:nth-of-type(2), 
-.right-picture-switch img:nth-of-type(2){
-    display:block;
-} 
-
-.modelling:hover .left-picture-switch img:nth-of-type(3), 
-.right-picture-switch img:nth-of-type(3){
-    display:block;
-}
-
-.artist:hover .left-picture-switch img:nth-of-type(4), 
-.right-picture-switch img:nth-of-type(4){
-    display:block;
-} 
 
 
 /* ----------------- my-blogs-page ---------------------*/
